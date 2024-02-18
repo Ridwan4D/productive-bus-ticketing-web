@@ -14,15 +14,99 @@
     <!-- external css link -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    
+    <!-- header section start -->
+    <header class="font-raleway px-3 md:px-36 space-y-5 relative">
+        <!-- nav part start-->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Destination</a></li>
+                            <li><a href="#">Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl md:text-2xl font-extrabold lg:text-4xl pl-0">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Destination</a></li>
+                        <li><a href="#">Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn bg-[#e8fae5] text-[#50db39]">Bus <i class="fa-solid fa-van-shuttle"></i></button>
+                </div>
+            </div>
+        </nav>
 
+        <!-- banner part start -->
+        <div
+            class="bg-[url(./images/banner.png)] h-[20vh] w-[95vw] md:h-[90vh] md:w-auto bg-contain bg-no-repeat lg:pt-28 text-center space-y-7">
+            <h1 class="lg:text-6xl text-white lg:font-extrabold">End-to-End Travel with <br><span
+                    class="text-[#1DD100]">P Paribahan</span></h1>
+            <p class="font-inter text-lg text-white">
+                Welcome aboard! Embark on a seamless journey with our state-of-the-art bus ticketing platform, <br>
+                where
+                convenience meets efficiency.
+            </p>
+            <button class="btn text-xl font-bold py-3 px-5 h-auto bg-[#1DD100] border-0"><a href="">Buy
+                    Ticket</a></button>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10 md:absolute md:bottom-0 md:left-72">
+            <div class="font-inter flex gap-3 py-8 px-10 bg-white w-auto rounded-3xl border-b-2 border-[#1DD100]">
+                <img src="images/people.png" alt="">
+                <div>
+                    <h2 class="text-4xl font-bold">500K+</h2>
+                    <p class="text-[#d9dadb] text-lg">Registered users</p>
+                </div>
+            </div>
+            <div class="font-inter flex gap-3 py-8 px-10 bg-white w-auto rounded-3xl border-b-2 border-[#1DD100]">
+                <img src="images/ticket-cupon.png" alt="">
+                <div>
+                    <h2 class="text-4xl font-bold">1.7 Lacks</h2>
+                    <p class="text-[#d9dadb] text-lg">Ticket Sold</p>
+                </div>
+            </div>
+            <div class="font-inter flex gap-3 py-8 px-10 bg-white w-auto rounded-3xl border-b-2 border-[#1DD100]">
+                <img src="images/stoppage.png" alt="">
+                <div>
+                    <h2 class="text-4xl font-bold">80K+</h2>
+                    <p class="text-[#d9dadb] text-lg">Rental Partners</p>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- main section start -->
+    <main>
+        
+    </main>
 
+    <!-- footer section start -->
+    <footer>
 
+    </footer>
+
+    <br><br><br><br><br><br><br><br><br>
 
     <script src="js/app.js"></script>
     <script src="js/utility.js"></script>
 </body>
+
 </html>
