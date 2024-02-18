@@ -65,7 +65,8 @@
                 where
                 convenience meets efficiency.
             </p>
-            <button class="btn text-xl font-bold py-3 px-5 h-auto bg-[#1DD100] border-0"><a href="#ticketing-section">Buy
+            <button class="btn text-xl font-bold py-3 px-5 h-auto bg-[#1DD100] border-0"><a
+                    href="#ticketing-section">Buy
                     Ticket</a></button>
         </div>
         <div class="flex flex-col md:flex-row gap-10 md:absolute md:bottom-0 md:left-72">
@@ -214,36 +215,36 @@
 
                             <!-- seats div -->
                             <div class="flex justify-end">
-                                <button class="btn px-10"><i class="fa-solid fa-futbol"></i></button>
+                                <button class="btn px-10" disabled><i class="fa-solid fa-futbol"></i></button>
                             </div>
                             <div class="flex justify-between text-lg font-medium">
                                 <div class="grid grid-cols-2 gap-5">
-                                    <button id="A1" class="btn px-10">A1</button>
-                                    <button id="A2" class="btn px-10">A2</button>
-                                    <button id="B1" class="btn px-10">B1</button>
-                                    <button id="B2" class="btn px-10">B2</button>
-                                    <button id="C1" class="btn px-10">C1</button>
-                                    <button id="C2" class="btn px-10">C2</button>
-                                    <button id="D1" class="btn px-10">D1</button>
-                                    <button id="D2" class="btn px-10">D2</button>
-                                    <button id="E1" class="btn px-10">E1</button>
-                                    <button id="E2" class="btn px-10">E2</button>
-                                    <button id="F1" class="btn px-10">F1</button>
-                                    <button id="F2" class="btn px-10">F2</button>
+                                    <button id="A1" class="btn px-10 sit-btn">A1</button>
+                                    <button id="A2" class="btn px-10 sit-btn">A2</button>
+                                    <button id="B1" class="btn px-10 sit-btn">B1</button>
+                                    <button id="B2" class="btn px-10 sit-btn">B2</button>
+                                    <button id="C1" class="btn px-10 sit-btn">C1</button>
+                                    <button id="C2" class="btn px-10 sit-btn">C2</button>
+                                    <button id="D1" class="btn px-10 sit-btn">D1</button>
+                                    <button id="D2" class="btn px-10 sit-btn">D2</button>
+                                    <button id="E1" class="btn px-10 sit-btn">E1</button>
+                                    <button id="E2" class="btn px-10 sit-btn">E2</button>
+                                    <button id="F1" class="btn px-10 sit-btn">F1</button>
+                                    <button id="F2" class="btn px-10 sit-btn">F2</button>
                                 </div>
                                 <div class="grid grid-cols-2 gap-5">
-                                    <button id="A3" class="btn px-10">A3</button>
-                                    <button id="A4" class="btn px-10">A4</button>
-                                    <button id="B3" class="btn px-10">B3</button>
-                                    <button id="B4" class="btn px-10">B4</button>
-                                    <button id="C3" class="btn px-10">C3</button>
-                                    <button id="C4" class="btn px-10">C4</button>
-                                    <button id="D3" class="btn px-10">D3</button>
-                                    <button id="D4" class="btn px-10">D4</button>
-                                    <button id="E3" class="btn px-10">E3</button>
-                                    <button id="E4" class="btn px-10">E4</button>
-                                    <button id="F3" class="btn px-10">F3</button>
-                                    <button id="F4" class="btn px-10">F4</button>
+                                    <button id="A3" class="btn px-10 sit-btn">A3</button>
+                                    <button id="A4" class="btn px-10 sit-btn">A4</button>
+                                    <button id="B3" class="btn px-10 sit-btn">B3</button>
+                                    <button id="B4" class="btn px-10 sit-btn">B4</button>
+                                    <button id="C3" class="btn px-10 sit-btn">C3</button>
+                                    <button id="C4" class="btn px-10 sit-btn">C4</button>
+                                    <button id="D3" class="btn px-10 sit-btn">D3</button>
+                                    <button id="D4" class="btn px-10 sit-btn">D4</button>
+                                    <button id="E3" class="btn px-10 sit-btn">E3</button>
+                                    <button id="E4" class="btn px-10 sit-btn">E4</button>
+                                    <button id="F3" class="btn px-10 sit-btn">F3</button>
+                                    <button id="F4" class="btn px-10 sit-btn">F4</button>
                                 </div>
                             </div>
                         </div>
@@ -268,15 +269,11 @@
                                     <p>Price</p>
                                 </div>
                                 <!-- productive div -->
-                                <div id="parent-container" class="text-base font-medium flex justify-between mt-5">
+                                <ul id="parent-container" class="text-base font-medium grid grid-cols-3 justify-between gap-5 mt-5">
                                     <!-- seat -->
                                     <!-- in this part i have to make a dianemic p tag -->
-                                    <p>hello</p>
-                                    <!-- seat class -->
-                                    <p>Class</p>
-                                    <!-- price -->
-                                    <p>Price</p>
-                                </div>
+                                    
+                                </ul>
                             </div>
 
 
@@ -286,9 +283,9 @@
                                     <h4>Total Price</h4>
                                     <p id="total-price">0</p>
                                 </div>
-                                <div class="flex justify-between px-5">
-                                    <input type="text" placeholder="have a coupon?">
-                                    <button class="btn common-bg px-10">Apply</button>
+                                <div id="discount-field" class="flex justify-between px-5">
+                                    <input id="coupon-input" type="text" placeholder="have a coupon?">
+                                    <button id="discount-btn" class="btn common-bg px-10" disabled>Apply</button>
                                 </div>
                             </div>
 
