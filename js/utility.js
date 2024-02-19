@@ -3,6 +3,21 @@ function setSelectedSitWithId(elementId,value){
     element.innerText = value;    
 }
 
+function selectBtnSitWithCls(elementId){
+    const elements = document.getElementsByClassName(elementId)
+    for (const element of elements) {
+        element.setAttribute("disabled",true);    
+        // console.log(element);
+    }
+
+}
+function unSelectBtnSitWithCls(elementId){
+    const elements = elementId;
+    for (const element of elements) {
+        element.removeAttribute("disabled",true);    
+    }
+}
+
 function setBackgroundColor(elementId) {
     const element = document.getElementById(elementId)
     element.classList.add("common-bg")

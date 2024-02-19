@@ -5,7 +5,7 @@ for (const btn of allbtn) {
         const click = e.target.innerText;
         const clicked = e.target;
         clicked.setAttribute("disabled", true)
-        newArray.push(click)
+        newArray.push(clicked)
         increaseValue("selected-sit");
         decreaseValue("available-sit")
         const selectedSit = document.getElementById("selected-sit").innerText;
@@ -22,7 +22,8 @@ for (const btn of allbtn) {
         parentElement.appendChild(li1);
         parentElement.appendChild(li2);
         if (newArray.length === 4) {
-            document.getElementById("coupon-input").addEventListener("keyup", function handleInput(event) {
+            const couponInput = document.getElementById("coupon-input");
+            couponInput.addEventListener("keyup", function handleInput(event) {
                 let text = event.target.value;
                 const discountBtn = document.getElementById("discount-btn");
                 if (text === "NEW15" || text === "Couple 20") {
@@ -31,7 +32,7 @@ for (const btn of allbtn) {
                     const grandTotalPrice = parseInt(grandTotalText)
                     if (text === "NEW15") {
                         const discountedPrice = parseInt(grandTotalPrice - (grandTotalPrice * 15) / 100);
-                        discountedGrandTotal(discountedPrice)
+                        discountedGrandTotal(discountedPrice);
                     }
                     else if (text === "Couple 20") {
                         const discountedPrice = parseInt(grandTotalPrice - (grandTotalPrice * 20) / 100);
@@ -42,10 +43,11 @@ for (const btn of allbtn) {
                 }
                 return text;
             })
-            document.getElementById("discount-btn").addEventListener("click", function () {
+            document.getElementById("discount-btn").addEventListener("click", handleClick)
+            function handleClick() {
                 const discountDiv = document.getElementById("discount-field");
                 discountDiv.style.display = "none"
-            })
+            }
         } else if (newArray.length >= 5) {
             document.getElementById("coupon-input").addEventListener("keyup", function handleInput(event) {
                 let text = event.target.value;
@@ -66,7 +68,14 @@ for (const btn of allbtn) {
                 return text;
             })
         }
+        // const btnOfAll = document.getElementsByClassName("sit-btn");
+        if (newArray.length == 4) {
+            selectBtnSitWithCls("sit-btn");
+            unSelectBtnSitWithCls(newArray);
+        }
+        else{
+            unSelectBtnSitWithCls(newArray);
+        }
+        setBackgroundColor(click)
     })
 }
-
-
